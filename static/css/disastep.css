@@ -1,0 +1,122 @@
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e); /* Dark theme */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  font-family: 'Arial', sans-serif;
+  transition: opacity 0.5s ease-in-out;
+}
+.disaster-loading-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-top: 10px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.loading-overlay p {
+  font-size: 1.2rem;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5;
+  }
+}
+
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient Background */
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading Styling */
+.disaster-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Disaster Details Styling */
+.disaster-details {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.ebut {
+  text-decoration: none;
+  color: #ff7e5f;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 5px;
+}
+
+.ebut:hover {
+  background-color: #feb47b;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  .disaster-title {
+      font-size: 1.8rem;
+  }
+
+  .disaster-details {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+      padding: 15px;
+  }
+
+  .disaster-title {
+      font-size: 1.5rem;
+  }
+
+  .disaster-details {
+      font-size: 0.9rem;
+  }
+}

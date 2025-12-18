@@ -1,8 +1,0 @@
-Django
-openai
-nltk
-bs4
-folium
-langchain
-transformers
-torch

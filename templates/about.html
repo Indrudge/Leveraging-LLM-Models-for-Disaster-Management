@@ -1,0 +1,85 @@
+{% extends 'nevbar.html' %}
+{% load static %}
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block body %}
+<!-- Main About Section -->
+<section class="about-section">
+    <div class="about-container">
+        <h1 class="about-title">About Us</h1>
+        <p class="about-description"> 
+The Disaster Management System is an innovative solution transforming how we respond to natural calamities by utilizing the latest advancements in technology. Designed to provide near real-time data analysis, it integrates reliable information from trusted News APIs to deliver accurate and timely disaster insights. This system empowers stakeholders—including emergency responders, government officials, and the public—with actionable data when it is needed most.  
+By leveraging advanced Natural Language Processing (NLP) techniques, interactive geospatial mapping, and a modular design, the platform offers an intuitive and user-friendly experience. It identifies affected regions, maps critical resources such as shelters and hospitals, and optimizes evacuation routes and relief efforts. These capabilities make it an invaluable tool for reducing response times and minimizing the impact of disasters. Its scalability and cost-effectiveness ensure its adaptability across various regions and scenarios, including floods, earthquakes, and multi-disaster crises.  
+Built on a strong data management foundation, the system employs NoSQL databases to handle unstructured data efficiently while utilizing intelligent optimization algorithms for seamless resource allocation. Geospatial overlays and dynamic dashboards enhance situational awareness, enabling decision-makers to coordinate responses with exceptional precision. Beyond immediate disaster response, the platform supports community resilience, urban safety planning, and humanitarian aid efforts. It also serves as an educational and preparedness tool, helping communities address challenges in disaster-prone areas proactively.  
+Future developments include offline functionality, IoT integration, and multi-language support, extending the system's accessibility and effectiveness. The Disaster Management System is more than a technological tool—it is a commitment to saving lives, fostering resilience, and building a safer, more prepared world.
+        </p>
+    </div>
+
+    <!-- Meet the Team Section -->
+    <div class="team-section">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'images/indrudge.jpg' %}" alt="Team Member 1">
+                </div>
+                <div class="member-info">
+                    <h3>Indrudge Panwar</h3>
+                    <p>Enrollment No : R252222057</p>
+                    <p>Brief description about the team member, their role in the project, and contribution.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'images/Trisha.jpg' %}" alt="Team Member 2">
+                </div>
+                <div class="member-info">
+                    <h3>Trisprisha Gupta</h3>
+                    <p>Enrollment No : R252222146</p>
+                    <p>Brief description about the team member, their role in the project, and contribution.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'images/Bhavi.jpg' %}" alt="Team Member 3">
+                </div>
+                <div class="member-info">
+                    <h3>Bhavishya Aggarwal</h3>
+                    <p>Enrollment No : R252222113</p>
+                    <p>Brief description about the team member, their role in the project, and contribution.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'images/donkey.png' %}" alt="Team Member 4">
+                </div>
+                <div class="member-info">
+                    <h3>Viraj Mehrotra</h3>
+                    <p>Enrollment No : R252222081</p>
+                    <p>Brief description about the team member, their role in the project, and contribution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mentor Section -->
+    <div class="mentor-section">
+        <h2 class="section-title">Our Mentor</h2>
+        <div class="mentor-container">
+            <div class="mentor-photo">
+                <img src="{% static 'images/Dr.Muthukumar.jpg' %}" alt="Mentor">
+            </div>
+            <div class="mentor-info">
+                <h3>Dr. Muthukumar KA</h3>
+                <p>Role: Project Mentor</p>
+                <p>Brief description of the mentor, their experience, and how they’ve guided the team.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

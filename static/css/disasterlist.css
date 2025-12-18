@@ -1,0 +1,39 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+
+section {
+    padding: 20px;
+}
+
+.disaster-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.disaster-list li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.disaster-list li a {
+    text-decoration: none;
+    color: #003366;
+}
+
+.disaster-details {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
