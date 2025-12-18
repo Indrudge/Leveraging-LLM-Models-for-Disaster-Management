@@ -23,22 +23,7 @@ Install the required Python libraries using the following command:
 ```bash
 pip install -r requirements.txt
 ```
-### Directory Map
-Make sure the files are in this perticular order 
-```bash
-disaster-management-LLM/
-│
-├── data/                   # Directory for collected raw data
-├── models/                 # Trained LLM models
-├── reports/                # Generated disaster reports
-├── scripts/                # Web scraping, prediction, and mapping scripts
-│   ├── scrape_data.py
-│   ├── predict_disaster.py
-│   └── generate_report.py
-├── app.py                  # Main application script
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-```
+
 
 ## Acknowledgments
 
