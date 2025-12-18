@@ -1,0 +1,71 @@
+
+
+
+/* Disaster Details Section */
+.disaster-details {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Beautiful gradient */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.disaster-details h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.disaster-details p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.disaster-details a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #ff7e5f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.disaster-details a:hover {
+    background-color: #feb47b;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .disaster-details {
+        padding: 25px;
+    }
+
+    .disaster-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .disaster-details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .disaster-details {
+        padding: 20px;
+    }
+
+    .disaster-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .disaster-details p {
+        font-size: 0.9rem;
+    }
+}

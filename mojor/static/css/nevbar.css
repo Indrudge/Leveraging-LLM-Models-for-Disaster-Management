@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe259;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffe259;
+    transition: width 0.3s;
+    margin: auto;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .cta .btn {
+    background: #fff;
+    color: #ff6a00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background: #ffe259;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  .nav-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none; /* Hide by default on small screens */
+      flex-direction: column;
+      background: #ff6a00;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border-radius: 10px;
+      padding: 15px 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show menu when active */
+    }
+  }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar {
+      position: relative;
+    }
+   .nav-links li {
+      position: relative;
+    }
+  
